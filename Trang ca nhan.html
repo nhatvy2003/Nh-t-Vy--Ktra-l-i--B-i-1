@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Cá Nhân - Phan Vũ Nhật Vy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #88dceb;
+            color: #df57c1;
+        }
+        header {
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQryKIrazDGvnDtYizpBF6ndDI-lx3_H1rbaQ&s');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            color: rgb(234, 82, 89);
+            padding: 20px 10px;
+            text-align: center;
+            position: relative;
+        }
+        header nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        header nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        header nav ul li a {
+            color: rgb(196, 10, 10);
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .avatar {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 4px solid rgb(127, 6, 6);
+        }
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 10px;
+        }
+        .intro-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 20px auto;
+        }
+        main section {
+            width: 80%;
+            display: none;
+            background: white;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #7cea58;
+            color: rgb(28, 42, 188);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-info">
+            <img src="https://scontent.fsgn5-7.fna.fbcdn.net/v/t39.30808-6/393258833_1361869004726528_6013043665898097144_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEfdOdUak2cOiJm3P0Q4vk3nAMsvXkCvvycAyy9eQK-_BOdzP-FSCb-CgMr4UQe8XEWsiSmXwLnx_P3TI06Cty_&_nc_ohc=bvC7arJS_jIQ7kNvgFS883g&_nc_zt=23&_nc_ht=scontent.fsgn5-7.fna&oh=00_AfDF3ppwQ0H5tex4vbCCKxXiRnOJTquMhpVWX_x7rZZYVA&oe=663CB593" alt="Avatar" class="avatar">
+            <h1>Phan Vũ Nhật Vy</h1>
+            <p>MARKETER - DESIGNER</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showSection('intro')">Trang Chủ</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('about')">Giới Thiệu</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('favorites')">Sở Thích</a></li>
+                <li><a href="javascript:void(0);" onclick="showSection('contact')">Liên Hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="intro-image" id="intro">
+            <img src="https://scontent.fsgn5-13.fna.fbcdn.net/v/t39.30808-6/440161413_1473393383574089_3818157810628602878_n.jpg?stp=dst-jpg_s600x600&_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFAZSbHSvAHEOcwub2udARXgJtcpNrzosKAm1yk2vOiwvRF0dYoUeFR47hdmSPs9CgrTw7NvsEY2rx9ve6kW9FN&_nc_ohc=pFxL5VKVysAQ7kNvgH0schH&_nc_zt=23&_nc_ht=scontent.fsgn5-13.fna&oh=00_AfAEZBlNM_n0y8VaDCUgrSrjqvVDjBLXXOM9rAzGCjAp8g&oe=663CB881" alt="Hình Giới Thiệu">
+        </div>
+        <section id="about">
+            <img src="https://scontent.fsgn5-7.fna.fbcdn.net/v/t39.30808-6/439887526_1473458260234268_3185841509941503511_n.jpg?stp=dst-jpg_p180x540&_nc_cat=103&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeEGGeqw8CrWD1Z6lhbv8dsJisMWvTJso9mKwxa9Mmyj2bAo8BakrlI9okQMJ_k5RthIGekYWqykmnWHIt3XWCPj&_nc_ohc=l-cXOxNOkQkQ7kNvgEeFw9E&_nc_zt=23&_nc_ht=scontent.fsgn5-7.fna&oh=00_AfDMmBaQoVFwHR1tOlLkxbanQceZHsWvzO_6JGuqKkbaFg&oe=663CC028" alt="About Image" class="section-img">
+            <h2>Giới Thiệu</h2>
+            <p>Xin chào! Tôi là Phan Vũ Nhật Vy, một người chăm chỉ và đầy tham vọng với niềm đam mê lớn đối với ngành Thương mại điện tử. Hiện đang học tại Đại học Công Nghiệp tp HCM. Tôi có kỹ năng giao tiếp tốt.</p>
+        </section>
+        <section id="favorites">
+            <img src="https://scontent.fsgn5-1.fna.fbcdn.net/v/t39.30808-6/439979088_1473463993567028_1261506506542663319_n.jpg?stp=dst-jpg_p526x296&_nc_cat=107&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeFQGrk3l_0v9BuVWQE1jaL6TSVDT0FI4axNJUNPQUjhrCG49JmMA_VY1t-59rMuS3lJ0p9Kdo_oKktvkbWKHUAL&_nc_ohc=7jQsnPcWeiYQ7kNvgFvT9PI&_nc_zt=23&_nc_ht=scontent.fsgn5-1.fna&oh=00_AfA4lvsmo6KTzjBm0RbJxrMJEYIr7fnc9TAeBqV0zUbHzA&oe=663CC5C2" alt="Favorites Image" class="section-img">
+            <h2>Sở Thích</h2>
+            <ul>
+                <li>Đọc sách</li>
+                <li>Chụp ảnh phong cảnh</li>
+                <li>Viết blog về cuộc sống và công việc</li>
+            </ul>
+        </section>
+        <section id="contact">
+            <img src="data:image/jpeg;base64,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" alt="Contact Image" class="section-img">
+            <h2>Liên Hệ</h2>
+            <p>Bạn có thể liên hệ với tôi qua email: <a href="mailto:phanvunhatvy2003@gmail.com">phanvunhatvy2003@gmail.com</a></p>
+            <a href="https://web.facebook.com/pvnv.204" target="_blank">Theo dõi tôi trên Facebook</a>
+        </section>
+    </main>
+    <footer>
+        <p>© Hello My Friend</p>
+    </footer>
+    <script>
+        function showSection(id) {
+            // Ẩn tất cả các phần tử trong phần chính
+            document.querySelectorAll('main > div, main > section').forEach(function(section) {
+                section.style.display = 'none';
+            });
+            // Hiển thị phần được chọn
+            document.getElementById(id).style.display = 'block';
+        }
+        // Khi trang được tải, hiển thị hình ảnh giới thiệu
+        document.addEventListener('DOMContentLoaded', function() {
+            showSection('intro');
+        });
+    </script>
+</body>
+</html>
